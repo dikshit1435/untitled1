@@ -82,11 +82,12 @@ class MyAppState extends State<MyApp> {
               ],
             ),
           ),
+
         )
             : !isDone?Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('No Image'),
+                Text('No Image Available'),
                 TextButton(onPressed: (){ downloadFile();},
                     child:Text('Press Here to Download Image')),
               ],
